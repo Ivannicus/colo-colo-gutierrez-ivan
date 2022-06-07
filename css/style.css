@@ -1,0 +1,595 @@
+/* Reinicio */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilos Generales - Header & Footer */
+
+/* Header */
+.header{
+    grid-area: header;
+    display: flex;
+    background-color: black ;
+    min-height: 7vh;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.logoAlbo{
+    width: 45px;
+    height: 45px;
+}
+
+.header h2{
+    color: white;
+    margin: 1rem;
+}
+.listaHeader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header nav ul li{
+    text-align: center;
+    border: solid 1px red;
+    padding: 0.5rem;
+    width: 6.5rem;
+    margin: 0.5rem;
+    background-color: black;
+    list-style: none;
+    font-size: small;
+}
+
+.header nav ul li a{
+    color: white;
+}
+
+.header nav ul li:hover{
+    background-color: rgb(255, 0, 0); 
+}
+
+.header nav ul li a:hover{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header nav ul li a:visited{
+    color:white;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer{
+    grid-area: footer;
+    min-height: 9vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+}
+
+.footer ul{
+    display: flex;
+    color: white;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer ul li a{
+    font-size: x-large;
+    margin: .5rem;
+    color: white;
+}
+
+.footer ul li a i:hover{
+    color: yellow;
+    font-weight: bold;
+}
+.footer ul li a i:visited{
+    color: white;
+    text-decoration: none;
+}
+
+ /* Estilo Página 1 - Index */
+
+ /* Estructura Grid */
+.divIndex{  
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "mainIndex mainIndex mainIndex mainIndex"
+      "mainIndex mainIndex mainIndex mainIndex"
+      "footer footer footer footer";
+    max-width: 100%;
+  }
+
+/* Main de Index */
+.mainIndex{
+    grid-area: mainIndex;
+    min-height: 82.6vh;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainIndex h1{
+    text-align: center;
+    align-self: center;
+    margin: 1rem;
+    text-decoration: underline;
+    max-width: 80%;
+}
+
+.mainIndex p{
+    text-align: center;
+    align-self: center;
+    max-width: 80vw;
+    font-size: large;
+}
+
+.mainIndex section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mainIndex section article{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 1rem;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainIndex iframe{
+    height: 225px;
+    width: 350px;
+    align-self: center;
+    margin: 1rem;
+}
+
+.mainIndex section p{
+    width: 60%;
+    margin-top: 1.5rem;
+    margin-left: .5rem;
+    margin-right: 1.5rem;
+    text-align: justify;
+}
+.mainIndex h3{
+    font-size: x-large;
+    justify-self: center;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+/* Responsive Design - Mobile Last */
+
+/* Diseño Tablets - Index */
+@media (max-width: 768px){
+    .mainIndex section{
+        flex-direction: column;
+    }
+
+    .mainIndex iframe{
+        width: 420px;
+    }
+
+    .mainIndex section p{
+        width: 75vw;
+    }
+}
+
+/* Diseño Celulares - Index */
+@media (max-width: 420px){
+    .header{
+        flex-direction: column;
+    }
+
+    .mainIndex iframe{
+        width: 300px;
+    }
+
+    .mainIndex section article{
+        width: 80vw
+    }
+
+    .mainIndex section p{
+        width: 80vw;
+    }
+}
+    
+
+/* Estilo Página 2 - Fixture */
+
+/* Estructura Grid */
+.divFixture{  
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "mainFixture mainFixture mainFixture mainFixture"
+      "mainFixture mainFixture mainFixture mainFixture"
+      "footer footer footer footer";
+    max-width: 100%;
+  }
+
+  /* Main de Fixture */
+.mainFixture{
+    grid-area: mainFixture;
+    min-height: 82.6vh;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mainFixture article{
+    display: flex; 
+    min-height: 70%;    
+    max-width: 100%;
+    align-items: center;
+
+}
+
+.tablas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.tituloTabla{
+    max-width: 70%;
+    text-align: center;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.tablaInterior{
+    text-align: center;
+    border: solid 2px black;
+    width: 300px;
+    justify-self: center;
+    border-collapse: collapse;
+    overflow: scroll;
+}
+
+.tablaInterior th{
+    font-size: 12px;
+}
+
+.tablaInterior td{
+    font-size: x-small;
+}
+
+.mainFixture table tr th{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.tablaFecha{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+.tablaPartidos{
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+    font-size: small;
+}
+
+
+.mainFixture table tr th a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.mainFixture table tr th a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.mainFixture h3{
+    font-weight: bold;
+    font-size: x-large;
+    padding: 1rem;
+}
+
+/* Diseño Tablets - Fixture */
+@media (max-width: 768px){
+    .mainFixture article{
+        flex-direction: column;
+    }
+
+    .tablaInterior th, .tablaInterior td{
+        font-size: x-small;
+    }
+}
+
+
+/* Diseño Celulares - Fixture */
+@media (max-width: 420px){
+    .header{
+        flex-direction: column;
+    }
+
+}
+
+/* Estilo Página 3 - Historia */
+
+/* Estructura Grid */
+.divHistoria{  
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "mainHistoria mainHistoria mainHistoria mainHistoria"
+      "mainHistoria mainHistoria mainHistoria mainHistoria"
+      "footer footer footer footer";
+    max-width: 100%;
+  }
+
+  /* Main de Historia */
+.mainHistoria{
+    grid-area: mainHistoria;
+    min-height: 82.6vh;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.historiaIntro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.historiaIntro h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: x-large;
+    margin-top: .5rem;
+}
+
+.historiaIntro h3{
+    margin-bottom: .5rem;
+    max-width: 80%;
+}
+
+.seccionesHistoria{
+    display: flex;
+    border: double 2px black;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccionesHistoria h3, .seccionesHistoria p, .seccionesHistoria img{
+    padding: .5rem;
+}
+
+.seccionesHistoria h3{
+    text-align: center;
+}
+
+.imagenesHistoria{
+    height: 160px;
+}
+
+/* Diseño Tablets - Historia */
+/* Se ajusta bien con el wrap de Flex */
+
+
+/* Diseño Celulares - Historia */
+/* Se ajusta la dirección de flex */
+@media (max-width: 420px){
+    .seccionesHistoria{
+        flex-direction: column;
+    }
+
+}
+
+/* Estilo Página 4 - Plantel */
+
+/* Estructura Grid */
+.divPlantel{  
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "mainPlantel mainPlantel mainPlantel mainPlantel"
+      "mainPlantel mainPlantel mainPlantel mainPlantel"
+      "footer footer footer footer";
+    max-width: 100%;
+  }
+
+  /* Main de Plantel */
+.mainPlantel{
+    grid-area: mainPlantel;
+    min-height: 82.6vh;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.plantelesCC{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.plantelesCC h2{
+    margin: 1rem;
+    text-decoration: underline;
+}
+
+.plantelesCC div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.plantelesCC article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plantelesCC img{
+    height: 180px;
+    margin: .5rem;
+}
+
+/* Diseño Tablets - Planteles */
+@media (max-width: 768px){
+    .plantelesCC div{
+        flex-direction: column;
+    }
+}
+
+
+/* Diseño Celulares - Planteles */
+@media (max-width: 420px){
+    
+
+}
+
+/* Página 5 - Hazte Socio */
+
+.divHazteSocio{  
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "mainSocio mainSocio mainSocio mainSocio"
+      "mainSocio mainSocio mainSocio mainSocio"
+      "footer footer footer footer";
+    max-width: 100%;
+  }
+/* Main Hazte Socio */
+
+.mainSocio{
+    background-color: azure;
+    min-height: 82.6vh;
+    width: 100vw;
+}
+
+.mainSocio h3{
+    text-decoration: underline;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.mainSocio form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 600px;
+    width: 500px;
+    border: dashed 2px black;
+    background-image: url('../img/Background.jpg') ;
+    background-size: cover;
+    border-radius: 1.5rem;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    align-self: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.mainSocio h4{
+    color: white;
+    font-size: large;
+}
+
+.informacion{
+    display: flex;
+}
+.mainSocio input, .mainSocio form select, .mainSocio textarea{
+    text-align: center;
+    border: solid 1px red;
+    margin: 0.5rem;
+}
+
+.newsletter{
+    color: white;
+    text-align: center;
+}
+.botones{
+    display: flex;
+}
+.sexo{
+    color: white;
+    text-align: center; 
+}
+
+.sexo span{
+    padding-right: 1rem;
+}
+
+
+.boton{
+    padding: 10px;
+    border: solid 2px black;
+}
+
+
+/* Diseño Tablets - Hazte Socio */
+@media (max-width: 768px){
+    .informacion{
+        flex-direction: column;
+    }
+
+    .mainSocio form{
+        width: 400px;
+    }
+    
+    .mainSocio textarea{
+        width: 80%;
+    }
+
+    .mainSocio input{
+        padding: .3rem
+
+    }
+}
+
+
+/* Diseño Celulares - Hazte Socio */
+@media (max-width: 420px){
+    .mainSocio form{
+        width: 350px;
+    }
+
+    .mainSocio input{
+        padding: .1rem
+        
+    }
+
+}
