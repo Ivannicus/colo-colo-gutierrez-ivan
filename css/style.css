@@ -13,7 +13,8 @@
 .header{
     grid-area: header;
     display: flex;
-    background-color: black ;
+    background-image: linear-gradient(to bottom, black 92%, rgb(255, 255, 255));
+    /* background-color: black ; */
     min-height: 7vh;
     align-items: center;
     justify-content: space-around;
@@ -68,7 +69,8 @@
 .footer{
     grid-area: footer;
     min-height: 9vh;
-    background-color: black;
+    background-image: linear-gradient(to top, black 95%, rgb(255, 255, 255));
+    /* background-color: black; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -119,12 +121,13 @@
 .mainIndex{
     grid-area: mainIndex;
     min-height: 82.6vh;
-    background-color: azure;
+    background-color: black;
     display: flex;
     flex-direction: column;
 }
 
 .mainIndex h1{
+    color: white;
     text-align: center;
     align-self: center;
     margin: 1rem;
@@ -133,6 +136,7 @@
 }
 
 .mainIndex p{
+    color: white;
     text-align: center;
     align-self: center;
     max-width: 80vw;
@@ -163,6 +167,7 @@
 }
 
 .mainIndex section p{
+    color: white;
     width: 60%;
     margin-top: 1.5rem;
     margin-left: .5rem;
@@ -170,6 +175,7 @@
     text-align: justify;
 }
 .mainIndex h3{
+    color: white;
     font-size: x-large;
     justify-self: center;
     margin-top: 1.5rem;
@@ -225,13 +231,14 @@
       "mainFixture mainFixture mainFixture mainFixture"
       "footer footer footer footer";
     max-width: 100%;
+    color: white
   }
 
   /* Main de Fixture */
 .mainFixture{
     grid-area: mainFixture;
     min-height: 82.6vh;
-    background-color: azure;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,7 +271,7 @@
 
 .tablaInterior{
     text-align: center;
-    border: solid 2px black;
+    border: solid 2px rgb(131, 129, 129);
     width: 300px;
     justify-self: center;
     border-collapse: collapse;
@@ -347,13 +354,14 @@
       "mainHistoria mainHistoria mainHistoria mainHistoria"
       "footer footer footer footer";
     max-width: 100%;
+    color: white;
   }
 
   /* Main de Historia */
 .mainHistoria{
     grid-area: mainHistoria;
     min-height: 82.6vh;
-    background-color: azure;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -380,7 +388,8 @@
 
 .seccionesHistoria{
     display: flex;
-    border: double 2px black;
+    border: double 2px rgb(161, 161, 161);
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -422,13 +431,14 @@
       "mainPlantel mainPlantel mainPlantel mainPlantel"
       "footer footer footer footer";
     max-width: 100%;
+    color: white;
   }
 
   /* Main de Plantel */
 .mainPlantel{
     grid-area: mainPlantel;
     min-height: 82.6vh;
-    background-color: azure;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -490,11 +500,12 @@
       "mainSocio mainSocio mainSocio mainSocio"
       "footer footer footer footer";
     max-width: 100%;
+    color: white;
   }
 /* Main Hazte Socio */
 
 .mainSocio{
-    background-color: azure;
+    background-color: black;
     min-height: 82.6vh;
     width: 100vw;
 }
@@ -511,7 +522,7 @@
     text-align: center;
     height: 600px;
     width: 500px;
-    border: dashed 2px black;
+    border: dashed 2px rgb(255, 255, 255);
     background-image: url('../img/Background.jpg') ;
     background-size: cover;
     border-radius: 1.5rem;
