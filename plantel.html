@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7caa7bdcfb.js" crossorigin="anonymous"></script>
     <link rel="shorcut icon" href="./images/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Plantel</title>
 </head>
@@ -14,8 +16,7 @@
 <body>
     <div class="divPlantel">
         <header class="header">
-            <a href="./index.html"><img src="./img/logo.webp"
-                    alt="Logo Colo-Colo" class="logoAlbo"></a>
+            <a href="./index.html"><img src="./img/logo.webp" alt="Logo Colo-Colo" class="logoAlbo"></a>
             <h2>Club Social y Deportivo Colo-Colo</h2>
             <nav>
                 <ul class="listaHeader">
@@ -40,36 +41,51 @@
         </header>
 
         <main class="mainPlantel">
-            <section class="plantelesCC">
-                <h2>Planteles Profesionales</h2>
-                <div>
-                    <article>
-                        <img src="https://img.asmedia.epimg.net/resizer/2uIvZvDCYduCDdBmng-FP3kQD8A=/644x362/filters:focal(1335x288:1345x298)/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/RGBIC5OBEJBSLNCK76JSPZNVA4.jpg"
-                            alt="Colo-Colo Masculino" class="equipoMasculino">
-                        <h3 class="tituloMasculino">Plantel Profesional Masculino</h3>
-                    </article>
-                    <article>
-                        <img src="https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/T432L5JZQZBVDBOPA32JMJZLRE.jpg"
-                            alt="Colo-Colo Femenino" class="equipoFemenino">
-                        <h3 class="tituloFemenino">Plantel Profesional Femenino</h3>
-                    </article>
-                </div>
-            </section>
-            <section class="plantelesCC">
-                <h2>Planteles Juveniles</h2>
-                <div>
-                    <article>
-                        <img src="https://dalealbo.cl/__export/1647382633200/sites/dalealbo/img/2022/03/15/la-sub-21-de-colo-colo-conocio-a-su-rival-en-la-primera-fecha-del-campenato-futbol-joven_crop1647382416890.jpg_242310155.jpg"
-                            alt="Colo-Colo Sub-21" class="equipoSub21">
-                        <h3 class="tituloSub21">Plantel Sub-21</h3>
-                    </article>
-                    <article>
-                        <img src="https://anfp.cl/imagenes/galerias/p1delcca471g82du9ceq1sv1eoa8.jpg"
-                            alt="Colo-Colo Sub-19" class="equipoSub19">
-                        <h3 class="tituloSub19">Plantel Sub-19</h3>
-                    </article>
-                </div>
-            </section>
+            <div class="container-fluid">
+                <h2 class="text-center">Planteles</h2>
+                <div id="carouselPlanteles" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselPlanteles" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselPlanteles" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselPlanteles" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselPlanteles" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://bolavip.com/__export/1648320228117/sites/bolavip/img/2022/03/26/colo-colo_1_crop1648320226439.jpg_242310155.jpg" class="d-block w-75 mx-auto" alt="Plantel Masculino">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="text-bg-dark">Plantel Masculino 2022</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://redgol.cl/__export/1652548266871/sites/redgol/img/2022/05/14/280346229_167059272358843_7267708816464763281_n_crop1652546575300.jpg_242310155.jpg" class="d-block w-75 mx-auto" alt="Plantel Femenino">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="text-bg-dark">Plantel Femenino 2022</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://dalealbo.cl/__export/1636843262085/sites/dalealbo/img/2021/11/13/colo-colo-sub-21-derroto-a-barnechea_crop1636843252539.jpg_242310155.jpg" class="d-block w-75 mx-auto" alt="Plantel Sub-21">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="text-bg-dark">Plantel Sub-21</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://anfp.cl/imagenes/noticias/p1del2u6n7a1g41qo4s1q991rqe8.jpeg" class="d-block w-75 mx-auto" alt="Plantel Sub-19">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="text-bg-dark">Plantel Sub-19</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlanteles" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPlanteles" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+            </div>
         </main>
 
         <footer class="footer">
@@ -79,8 +95,12 @@
                 <li><a href="https://www.instagram.com/colocolooficial/"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://twitter.com/ColoColo"><i class="fa-brands fa-twitter"></i></a></li>
             </ul>
+            <h6>© 2022 Copyright: Iván Gutiérrez Arias</h6>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
