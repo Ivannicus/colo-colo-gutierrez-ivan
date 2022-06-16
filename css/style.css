@@ -461,6 +461,37 @@
     justify-content: space-around;
 }
 
+.carousel-item img{
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.contenedorTexto{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.carousel-item:hover img {
+    opacity: 0.5;
+}
+
+.carousel-item:hover .contenedorTexto{
+    opacity: 1;
+}
+
+.textoOculto{
+    background-color: rgba(248, 248, 255, 0.651);
+    color: black;
+    font-size: 1rem;
+    padding: 1rem,2rem;
+}
 
 /* Diseño Tablets - Planteles */
 @media (max-width: 768px){
