@@ -6,37 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7caa7bdcfb.js" crossorigin="anonymous"></script>
-    <link rel="shorcut icon" href="./images/favicon-32x32.png">
+    <link rel="shorcut icon" href="../img/favicon-32x32.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Plantel</title>
 </head>
 
 <body>
     <div class="divPlantel">
         <header class="header">
-            <a href="./index.html"><img src="./img/logo.webp" alt="Logo Colo-Colo" class="logoAlbo"></a>
-            <h2>Club Social y Deportivo Colo-Colo</h2>
-            <nav>
-                <ul class="listaHeader">
-                    <li>
-                        <a href="./index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="./fixture.html">Fixture</a>
-                    </li>
-
-                    <li>
-                        <a href="./historia.html">Historia</a>
-                    </li>
-                    <li>
-                        <a href="./plantel.html">Plantel</a>
-                    </li>
-                    <li>
-                        <a href="./haztesocio.html">Hazte Socio</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light" href="./index.html">
+                        <img src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/4155.png" alt=""
+                            width="40" height="40" class="d-inline-block align-text-center">
+                        CSD Colo-Colo
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <div class="container-fluid d-flex justify-content-evenly align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" aria-current="page"
+                                        href="./index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" href="./fixture.html">Fixture</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" href="./plantel.html">Plantel</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" href="./historia.html">Historia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" href="./haztesocio.html">Hazte Socio</a>
+                                </li>
+                            </div>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar en el sitio"
+                                aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
             </nav>
         </header>
 
