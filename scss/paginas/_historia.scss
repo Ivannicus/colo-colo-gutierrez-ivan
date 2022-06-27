@@ -1,0 +1,82 @@
+/* Estilo Página 3 - Historia */
+
+/* Estructura Grid */
+.divHistoria {
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        "mainHistoria mainHistoria mainHistoria mainHistoria"
+        "mainHistoria mainHistoria mainHistoria mainHistoria"
+        "footer footer footer footer";
+    max-width: 100%;
+    color: white;
+}
+
+/* Main de Historia */
+.mainHistoria {
+    grid-area: mainHistoria;
+    min-height: 82.6vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .historiaIntro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+            font-size: x-large;
+            margin-top: .5rem;
+        }
+
+        h3 {
+            margin-bottom: .5rem;
+            max-width: 80%;
+        }
+    }
+
+    .seccionesHistoria {
+        display: flex;
+        border: double 2px rgb(161, 161, 161);
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        article {
+            h3 {
+                padding: .5rem;
+                text-align: center;
+            }
+
+            p {
+                padding: .5rem;
+            }
+        }
+
+        .imagenesHistoria {
+            padding: .5rem;
+            height: 160px;
+        }
+
+    }
+}
+
+/* Diseño Tablets - Historia */
+/* Se ajusta bien con el wrap de Flex */
+
+/* Diseño Celulares - Historia */
+/* Se ajusta la dirección de flex */
+@media (max-width: 420px) {
+    .mainHistoria {
+        .seccionesHistoria {
+            flex-direction: column;
+        }
+    }
+}

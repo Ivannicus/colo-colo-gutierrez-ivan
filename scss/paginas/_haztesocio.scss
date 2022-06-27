@@ -1,0 +1,166 @@
+/* Página 5 - Hazte Socio */
+
+.divHazteSocio {
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        "mainSocio mainSocio mainSocio mainSocio"
+        "mainSocio mainSocio mainSocio mainSocio"
+        "footer footer footer footer";
+    max-width: 100%;
+    color: white;
+}
+
+/* Main Hazte Socio */
+
+.mainSocio {
+    background-color: black;
+    min-height: 82.6vh;
+    width: 100vw;
+
+    h3 {
+        text-decoration: underline;
+        text-align: center;
+        margin: 1.5rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 600px;
+        width: 500px;
+        border: dashed 2px rgb(255, 255, 255);
+        background-image: url('../img/Background.jpg');
+        background-size: cover;
+        border-radius: 1.5rem;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        h4 {
+            color: white;
+            font-size: large;
+        }
+
+        .informacion {
+            display: flex;
+
+            input {
+                text-align: center;
+                border: solid 1px red;
+                margin: 0.5rem;
+
+                &:focus {
+                    transform: scale(1.1);
+                    background-color: rgb(219, 34, 34);
+                }
+            }
+        }
+
+        textarea {
+            text-align: center;
+            border: solid 1px red;
+            margin: 0.5rem;
+
+            &:focus {
+                transform: scale(1.1);
+                background-color: rgb(219, 34, 34);
+            }
+        }
+
+        select {
+            text-align: center;
+            border: solid 1px red;
+            margin: 0.5rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .newsletter {
+            color: white;
+            text-align: center;
+
+            input {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .botones {
+            display: flex;
+
+            .boton {
+                padding: 10px;
+                border: solid 2px black;
+
+                &:hover {
+                    transform: translate(0.1);
+                    background-color: rgb(219, 34, 34);
+                    cursor: pointer;
+                    font-weight: bolder;
+                }
+            }
+        }
+
+        .sexo {
+            color: white;
+            text-align: center;
+
+            span {
+                padding-right: 1rem;
+            }
+
+            input {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+/* Diseño Tablets - Hazte Socio */
+@media (max-width: 768px) {
+
+    .mainSocio {
+        form {
+            width: 400px;
+
+            .informacion {
+                flex-direction: column;
+
+                input {
+                    padding: .3rem
+                }
+            }
+
+            textarea {
+                width: 80%;
+            }
+        }
+    }
+}
+
+
+/* Diseño Celulares - Hazte Socio */
+@media (max-width: 420px) {
+    .mainSocio {
+        form {
+            width: 350px;
+
+            .informacion{
+                input{
+                    padding: .1rem
+                }
+            }
+        }
+    }
+}

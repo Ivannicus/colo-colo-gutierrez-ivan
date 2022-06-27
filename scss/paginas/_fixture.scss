@@ -1,0 +1,137 @@
+/* Estilo Página 2 - Fixture */
+
+/* Estructura Grid */
+.divFixture {
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        "mainFixture mainFixture mainFixture mainFixture"
+        "mainFixture mainFixture mainFixture mainFixture"
+        "footer footer footer footer";
+    max-width: 100%;
+    color: white
+}
+
+/* Main de Fixture */
+.mainFixture {
+    grid-area: mainFixture;
+    min-height: 82.6vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    article {
+        display: flex;
+        min-height: 70%;
+        max-width: 100%;
+        align-items: center;
+
+        .tablas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            max-width: 100%;
+            flex-wrap: wrap;
+
+            .tituloTabla {
+                max-width: 70%;
+                text-align: center;
+                justify-self: center;
+                padding: 1rem;
+            }
+
+            .tablaInterior {
+                text-align: center;
+                border: solid 2px rgb(131, 129, 129);
+                width: 300px;
+                justify-self: center;
+                border-collapse: collapse;
+                overflow: scroll;
+
+                tr {
+                    th {
+                        font-size: 12px;
+                        background-color: black;
+                        color: white;
+                        padding: 10px;
+
+                        a {
+                            &:hover {
+                                text-decoration: none;
+                                color: white;
+                            }
+
+                            &:visited {
+                                text-decoration: none;
+                                color: white;
+                            }
+
+                            &:link {
+                                text-decoration: none;
+                                color: white;
+                            }
+                        }
+                    }
+
+                    td {
+                        font-size: x-small;
+                    }
+
+                    .tablaFecha {
+                        background-color: gray;
+                        color: white;
+                        padding: 10px;
+                    }
+
+                    .tablaPartidos {
+                        background-color: lightgray;
+                        color: black;
+                        font-weight: bold;
+                        font-size: small;
+                    }
+                }
+            }
+        }
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: x-large;
+        padding: 1rem;
+    }
+}
+
+
+/* Diseño Tablets - Fixture */
+@media (max-width: 768px) {
+    .mainFixture {
+        article {
+            flex-direction: column;
+
+            .tablas {
+                .tablaInterior {
+                    tr {
+                        th {
+                            font-size: x-small;
+                        }
+                        td {
+                            font-size: x-small;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}   
+ 
+/* Diseño Celulares - Fixture */
+@media (max-width: 420px) {
+    .header {
+        flex-direction: column;
+    }
+
+}

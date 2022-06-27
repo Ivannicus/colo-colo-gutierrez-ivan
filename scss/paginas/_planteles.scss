@@ -1,0 +1,94 @@
+/* Estilo Página 4 - Plantel */
+
+/* Estructura Grid */
+.divPlantel{  
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "mainPlantel mainPlantel mainPlantel mainPlantel"
+      "mainPlantel mainPlantel mainPlantel mainPlantel"
+      "footer footer footer footer";
+    max-width: 100%;
+    color: white;
+  }
+
+  /* Main de Plantel */
+.mainPlantel{
+    grid-area: mainPlantel;
+    min-height: 82.6vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    div{
+        h2{
+            font-weight: bold;
+        }
+        div{
+            div{
+                .carousel-item{
+                    img{
+                        transition: .5s ease;
+                        backface-visibility: hidden;
+                    }
+
+                    .contenedorTexto{
+                        transition: .5s ease;
+                        opacity: 0;
+                        position: absolute;
+                        bottom: -10%;
+                        left: 50%;
+                        width: 70%;
+                        transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%,-50%);
+                        text-align: center;
+
+                        .textoOculto{
+                            background-color: rgba(248, 248, 255, 0.651);
+                            color: black;
+                            font-size: 1rem;
+                            padding: 1rem,2rem;
+                        }
+                    }
+
+                    &:hover{
+                        img{
+                            opacity: 0.5;
+                        }
+
+                        .contenedorTexto{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Diseño Tablets - Planteles */
+@media (max-width: 768px){
+
+    .mainPlantel{
+        div{
+            div{
+                div{
+                    .carousel-item{
+                        &:hover{
+                            img{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Diseño Celulares - Planteles, nada que cambiar*/
+@media (max-width: 420px){
+}

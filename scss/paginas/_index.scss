@@ -1,0 +1,119 @@
+ /* Estructura Grid */
+ .divIndex{  
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "mainIndex mainIndex mainIndex mainIndex"
+      "mainIndex mainIndex mainIndex mainIndex"
+      "footer footer footer footer";
+    max-width: 100%;
+  }
+
+/* Main de Index */
+.mainIndex{
+    grid-area: mainIndex;
+    min-height: 82.6vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        color: white;
+        text-align: center;
+        align-self: center;
+        margin: 1rem;
+        text-decoration: underline;
+        max-width: 80%;
+    }
+    
+    p{
+        color: white;
+        text-align: center;
+        align-self: center;
+        max-width: 80vw;
+        font-size: large;
+    }
+
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        article{
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+            margin: 1rem;
+            height: 80%;
+            justify-content: center;
+            align-items: center;
+
+            iframe{
+                height: 225px;
+                width: 350px;
+                align-self: center;
+                margin: 1rem;
+            }
+        }
+
+        p{
+            color: white;
+            width: 60%;
+            margin-top: 1.5rem;
+            margin-left: .5rem;
+            margin-right: 1.5rem;
+            text-align: justify;
+        }
+    }
+    h3{
+        color: white;
+        font-size: x-large;
+        justify-self: center;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+}
+
+/* Responsive Design - Mobile Last */
+
+/* Diseño Tablets - Index */
+@media (max-width: 768px){
+    .mainIndex{
+        section{
+            flex-direction: column;
+
+            article{
+                iframe{
+                    width: 420px;
+                }
+            }
+
+            p{
+                width: 75vw;
+            }
+        }
+    } 
+}
+
+/* Diseño Celulares - Index */
+@media (max-width: 420px){
+    .header{
+        flex-direction: column;
+    }
+
+    .mainIndex{
+        section{
+            article{
+                width: 80vw;
+                iframe{
+                    width: 300px;
+                }
+            }
+            p{
+                width: 80vw;
+            }
+        }
+    }
+}

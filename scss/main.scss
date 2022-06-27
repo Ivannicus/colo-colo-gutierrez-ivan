@@ -1,0 +1,18 @@
+/* Reinicio */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@import './secciones/header';
+@import './secciones/footer';
+@import './secciones/animaciones';
+
+@import './paginas/index';
+@import './paginas/fixture';
+@import './paginas/historia';
+@import './paginas/planteles';
+@import './paginas/haztesocio';

@@ -1,0 +1,56 @@
+.header{
+    grid-area: header;
+    nav{
+        div{
+            a{
+                img{
+                    animation-name: beat;
+                    animation-duration: 1.5s;
+                    animation-iteration-count: 3;
+                }
+            }
+            div{
+                ul{
+                    width: 100%;
+                    li{
+                        border: solid 1px rgba(255, 0, 0, 0.543);
+                        border-radius: 15px;
+                        padding: 0.2rem;
+                        width: 15%;
+                        height: 80%;
+                        margin: 0.3rem;
+                        background-color: rgba(0, 0, 0, 0.297);
+                        list-style: none;
+                        font-size: small;
+                        text-align: center;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        vertical-align: middle;
+                        line-height: normal;
+                        
+                        &:hover{
+                            background-color: rgb(255, 0, 0); 
+                            transform: scale(1.15);
+                        }
+                        a{
+                            color: white;
+                            text-decoration: none;
+        
+                            &:visited{
+                                text-decoration: none;
+                                color: white;
+                            }
+                            &:hover{
+                                color: white;
+                                font-weight: bold;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
