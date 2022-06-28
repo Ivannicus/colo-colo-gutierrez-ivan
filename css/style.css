@@ -73,7 +73,8 @@
   .footer h6 {
     text-align: center;
     background-color: #161616;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    color: white; }
 
 /* Animaciones */
 @keyframes beat {
@@ -121,6 +122,8 @@
       height: 80%;
       justify-content: center;
       align-items: center; }
+      .mainIndex section article h2 {
+        color: white; }
       .mainIndex section article iframe {
         height: 225px;
         width: 350px;
