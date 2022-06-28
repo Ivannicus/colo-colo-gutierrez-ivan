@@ -1,0 +1,29 @@
+SEO
+A continuación se detallan todos los cambios implementados para el SEO de mi proyecto por página:
+
+    1.	Index:
+        a.	Keywords: Se agregaron las palabras clave "Colo-Colo, Albo, Cacique, Futbol, Chile, Primera División"
+        b.	Título: “CC – Inicio”. Se ocupa CC en lugar de Colo-Colo para ahorrar espacio y que se vea mejor del punto de vista del usuario en la pestaña del navegador
+        c.	Descripción: “En esta página encontrarás todo lo que necesitas saber de Colo-Colo el equipo más grande y popular de Chile”
+
+    2.	Fixture:
+        a.	Keywords: Se agregaron las palabras clave: "Futbol Chileno, Partidos, Primera División, Colo-Colo, Fixture, Calendario"
+        b.	Título: “CC – Fixture”. 
+        c.	Descripción: “Información de los próximos partidos de las distintas ramas deportivas del CSD Colo-Colo”
+
+    3.	Plantel:
+        a.	Keywords: "Colo-Colo, Fútbol Chileno, Equipo Masculino, Futbol Femenino, Sub-21, Sub-19"
+        b.	Título: “CC – Plantel”
+        c.	Descripción: “Información de los planteles de las distintas ramas deportivas del CSD Colo-Colo: Masculina, Femenina, Sub-21 y Sub-19”
+
+    4.	Historia:
+        a.	Keywords: "Colo-Colo, Historia, Futbol Chileno, Deporte en Chile, Copa Libertadores, Campeonato Nacional"
+        b.	Título: “CC – Historia”
+        c.	Descripción: “"Se detallen los hitos deportivos más importantes de Colo-Colo, entre los cuales está la Copa Libertadores de América"
+
+    5.	Hazte Socio:
+        a.	Keywords: "Colo-Colo, Hincha Fiel, Hazte Socio, Hinchada, Barra Brava, Garra Blanca"
+        b.	Título: “CC – Hazte Socio”
+        c.	Descripción: "¡Hazte Socio del CSD Colo - Colo! Apoya al equipo y disfruta de grandes beneficios"
+
+Además en todas las páginas se incluyó un encabezado h1, con distintos estilos (cuando era necesario) y un texto acorde a la página. 
