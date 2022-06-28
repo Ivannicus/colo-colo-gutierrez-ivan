@@ -26,4 +26,4 @@ A continuación se detallan todos los cambios implementados para el SEO de mi pr
         b.	Título: “CC – Hazte Socio”
         c.	Descripción: "¡Hazte Socio del CSD Colo - Colo! Apoya al equipo y disfruta de grandes beneficios"
 
-Además en todas las páginas se incluyó un encabezado h1, con distintos estilos (cuando era necesario) y un texto acorde a la página
+Además en todas las páginas se incluyó un encabezado h1, con distintos estilos (cuando era necesario) y un texto acorde a la página. 
