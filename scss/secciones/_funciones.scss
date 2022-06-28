@@ -1,0 +1,14 @@
+// Extend - Usado para el Flex column
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+// Mixin - Usado para definir color, tamaño y posicion de los textos en las distintas páginas
+
+@mixin texto($color, $tamano, $alineado){
+    color: $color;
+    font-size: $tamano;
+    text-align: $alineado;
+}

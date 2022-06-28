@@ -15,12 +15,10 @@
     grid-area: mainIndex;
     min-height: 82.6vh;
     background-color: black;
-    display: flex;
-    flex-direction: column;
+    @extend .flexColumn;
 
     h1{
-        color: white;
-        text-align: center;
+        @include texto(white, xx-large, center);
         align-self: center;
         margin: 1rem;
         text-decoration: underline;
@@ -28,11 +26,9 @@
     }
     
     p{
-        color: white;
-        text-align: center;
+        @include texto(white, large, center);
         align-self: center;
         max-width: 80vw;
-        font-size: large;
     }
 
     section{
@@ -41,8 +37,7 @@
         justify-content: space-evenly;
 
         article{
-            display: flex;
-            flex-direction: column;
+            @extend .flexColumn;
             width: 35%;
             margin: 1rem;
             height: 80%;
@@ -50,7 +45,7 @@
             align-items: center;
 
             h2{
-                color: white;
+                @include texto(white, x-large, center);
             }
 
             iframe{
@@ -62,20 +57,17 @@
         }
 
         p{
-            color: white;
+            @include texto(white, medium, justify);
             width: 60%;
             margin-top: 1.5rem;
             margin-left: .5rem;
             margin-right: 1.5rem;
-            text-align: justify;
         }
     }
     h3{
-        color: white;
-        font-size: x-large;
+        @include texto(white, x-large, center);
         justify-self: center;
         margin-top: 1.5rem;
-        text-align: center;
     }
 
 }

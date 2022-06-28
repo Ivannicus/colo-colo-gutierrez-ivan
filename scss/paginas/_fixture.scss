@@ -18,8 +18,7 @@
     grid-area: mainFixture;
     min-height: 82.6vh;
     background-color: black;
-    display: flex;
-    flex-direction: column;
+    @extend .flexColumn;
     align-items: center;
     justify-content: space-around;
 
@@ -30,8 +29,7 @@
         align-items: center;
 
         .tablas {
-            display: flex;
-            flex-direction: column;
+            @extend .flexColumn;
             align-items: center;
             justify-content: space-around;
             max-width: 100%;
@@ -46,7 +44,7 @@
 
             .tablaInterior {
                 text-align: center;
-                border: solid 2px rgb(131, 129, 129);
+                border: solid 2px rgb(61, 57, 57);
                 width: 300px;
                 justify-self: center;
                 border-collapse: collapse;
@@ -54,11 +52,10 @@
 
                 tr {
                     th {
-                        font-size: 12px;
+                        @include texto(white, 12px, center);
                         background-color: black;
-                        color: white;
                         padding: 10px;
-
+                        border: solid 1px white;
                         a {
                             &:hover {
                                 text-decoration: none;
@@ -78,20 +75,20 @@
                     }
 
                     td {
-                        font-size: x-small;
+                        @include texto(white, x-small, center);
+                        border: solid 1px white;
                     }
 
                     .tablaFecha {
                         background-color: gray;
-                        color: white;
+                        @include texto(white, x-small, center);
                         padding: 10px;
                     }
 
                     .tablaPartidos {
                         background-color: lightgray;
-                        color: black;
+                        @include texto(black, x-small, center);
                         font-weight: bold;
-                        font-size: small;
                     }
                 }
             }
@@ -99,8 +96,8 @@
     }
 
     h3 {
+        @include texto(white, x-large, center);
         font-weight: bold;
-        font-size: x-large;
         padding: 1rem;
     }
 }

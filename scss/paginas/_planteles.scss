@@ -18,13 +18,13 @@
     grid-area: mainPlantel;
     min-height: 82.6vh;
     background-color: black;
-    display: flex;
-    flex-direction: column;
+    @extend .flexColumn;
     align-items: center;
     justify-content: space-around;
     
     div{
-        h2{
+        h1{
+            @include texto(white, xx-large, center);
             font-weight: bold;
         }
         div{
@@ -48,8 +48,7 @@
 
                         .textoOculto{
                             background-color: rgba(248, 248, 255, 0.651);
-                            color: black;
-                            font-size: 1rem;
+                            @include texto(black, 1rem, center);
                             padding: 1rem,2rem;
                         }
                     }

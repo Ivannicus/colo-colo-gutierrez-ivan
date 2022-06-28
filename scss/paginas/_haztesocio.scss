@@ -20,15 +20,13 @@
     width: 100vw;
 
     h1 {
-        font-size: xx-large;
+        @include texto(white, xx-large, center);
         text-decoration: underline;
-        text-align: center;
         margin: 1.5rem;
     }
 
     form {
-        display: flex;
-        flex-direction: column;
+        @extend .flexColumn;
         text-align: center;
         height: 600px;
         width: 500px;
@@ -44,15 +42,14 @@
         margin-right: auto;
 
         h4 {
-            color: white;
-            font-size: large;
+            @include texto(white, x-large, center);
         }
 
         .informacion {
             display: flex;
 
             input {
-                text-align: center;
+                @include texto(grey, medium, center);
                 border: solid 1px red;
                 margin: 0.5rem;
 
@@ -64,18 +61,18 @@
         }
 
         textarea {
-            text-align: center;
+            @include texto(grey, medium, center);
             border: solid 1px red;
             margin: 0.5rem;
 
             &:focus {
-                transform: scale(1.1);
+                transform: scale(1.03);
                 background-color: rgb(219, 34, 34);
             }
         }
 
         select {
-            text-align: center;
+            @include texto(black, medium, center);
             border: solid 1px red;
             margin: 0.5rem;
 
@@ -85,8 +82,7 @@
         }
 
         .newsletter {
-            color: white;
-            text-align: center;
+            @include texto(white, medium, center);
 
             input {
                 &:hover {
@@ -112,8 +108,7 @@
         }
 
         .sexo {
-            color: white;
-            text-align: center;
+            @include texto(white, medium, center);
 
             span {
                 padding-right: 1rem;
