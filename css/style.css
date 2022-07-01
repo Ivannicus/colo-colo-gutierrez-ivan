@@ -43,6 +43,10 @@
           color: white;
           font-weight: bold;
           text-decoration: none; }
+    .header nav div div ul .activo {
+      background-color: red;
+      color: white;
+      border: solid 1px black; }
 
 .footer {
   grid-area: footer;
@@ -112,7 +116,7 @@
     font-size: large;
     text-align: center;
     align-self: center;
-    max-width: 80vw; }
+    max-width: 80%; }
   .mainIndex section {
     display: flex;
     align-items: center;
@@ -136,13 +140,13 @@
       color: white;
       font-size: medium;
       text-align: justify;
-      width: 60%;
+      width: 50%;
       margin-top: 1.5rem;
       margin-left: .5rem;
-      margin-right: 1.5rem; }
+      margin-right: 2.5rem; }
   .mainIndex h3 {
     color: white;
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;
     justify-self: center;
     margin-top: 1.5rem; }
@@ -297,19 +301,24 @@
     width: 100%;
     align-items: center;
     justify-content: center; }
-    .mainHistoria .seccionesHistoria article h3 {
-      color: white;
-      font-size: x-large;
-      text-align: center;
-      padding: .5rem; }
-    .mainHistoria .seccionesHistoria article p {
-      color: white;
-      font-size: large;
-      text-align: justify;
-      padding: .5rem; }
+    .mainHistoria .seccionesHistoria article {
+      width: 75%; }
+      .mainHistoria .seccionesHistoria article h3 {
+        color: white;
+        font-size: x-large;
+        text-align: center;
+        padding: .5rem; }
+      .mainHistoria .seccionesHistoria article p {
+        color: white;
+        font-size: large;
+        text-align: justify;
+        padding: .5rem;
+        width: 90%;
+        margin: 0 auto; }
     .mainHistoria .seccionesHistoria .imagenesHistoria {
       padding: .5rem;
-      height: 160px; }
+      height: 160px;
+      margin: 0 auto; }
 
 /* Diseño Tablets - Historia */
 /* Se ajusta bien con el wrap de Flex */

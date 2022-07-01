@@ -28,7 +28,7 @@
     p{
         @include texto(white, large, center);
         align-self: center;
-        max-width: 80vw;
+        max-width: 80%;
     }
 
     section{
@@ -58,14 +58,14 @@
 
         p{
             @include texto(white, medium, justify);
-            width: 60%;
+            width: 50%;
             margin-top: 1.5rem;
             margin-left: .5rem;
-            margin-right: 1.5rem;
+            margin-right: 2.5rem;
         }
     }
     h3{
-        @include texto(white, x-large, center);
+        @include texto(white, xx-large, center);
         justify-self: center;
         margin-top: 1.5rem;
     }
