@@ -88,7 +88,7 @@
   50% {
     transform: scale(1.3); } }
 
-.flexColumn, .mainIndex, .mainIndex section article, .mainFixture, .mainFixture article .tablas, .mainHistoria, .mainHistoria .historiaIntro, .mainPlantel, .mainSocio form {
+.flexColumn, .mainIndex, .mainIndex section article, .mainFixture, .mainFixture figure div, .mainHistoria, .mainHistoria .historiaIntro, .mainPlantel, .mainSocio form {
   display: flex;
   flex-direction: column; }
 
@@ -111,7 +111,8 @@
     align-self: center;
     margin: 1rem;
     text-decoration: underline;
-    max-width: 80%; }
+    max-width: 80%;
+    font-weight: bold; }
   .mainIndex p {
     color: white;
     font-size: large;
@@ -189,81 +190,69 @@
   background-color: black;
   align-items: center;
   justify-content: space-around; }
+  .mainFixture h1 {
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    margin: 1rem;
+    font-weight: bold; }
   .mainFixture article {
     display: flex;
     min-height: 70%;
     max-width: 100%;
-    align-items: center; }
-    .mainFixture article .tablas {
+    align-items: center;
+    justify-content: space-evenly; }
+    .mainFixture article section {
+      width: 30%; }
+      .mainFixture article section img {
+        opacity: 0.65; }
+        .mainFixture article section img:hover {
+          transform: scale(1.07);
+          opacity: 1; }
+  .mainFixture figure {
+    display: flex;
+    margin-top: 1rem; }
+    .mainFixture figure div {
       align-items: center;
-      justify-content: space-around;
-      max-width: 100%;
-      flex-wrap: wrap; }
-      .mainFixture article .tablas .tituloTabla {
-        max-width: 70%;
-        text-align: center;
-        justify-self: center;
-        padding: 1rem; }
-      .mainFixture article .tablas .tablaInterior {
-        text-align: center;
-        border: solid 2px #3d3939;
-        width: 300px;
-        justify-self: center;
-        border-collapse: collapse;
-        overflow: scroll; }
-        .mainFixture article .tablas .tablaInterior tr th {
-          color: white;
-          font-size: 12px;
-          text-align: center;
-          background-color: black;
-          padding: 10px;
-          border: solid 1px white; }
-          .mainFixture article .tablas .tablaInterior tr th a:hover {
-            text-decoration: none;
-            color: white; }
-          .mainFixture article .tablas .tablaInterior tr th a:visited {
-            text-decoration: none;
-            color: white; }
-          .mainFixture article .tablas .tablaInterior tr th a:link {
-            text-decoration: none;
-            color: white; }
-        .mainFixture article .tablas .tablaInterior tr td {
-          color: white;
-          font-size: x-small;
-          text-align: center;
-          border: solid 1px white; }
-        .mainFixture article .tablas .tablaInterior tr .tablaFecha {
-          background-color: gray;
-          color: white;
-          font-size: x-small;
-          text-align: center;
-          padding: 10px; }
-        .mainFixture article .tablas .tablaInterior tr .tablaPartidos {
-          background-color: lightgray;
-          color: black;
-          font-size: x-small;
-          text-align: center;
-          font-weight: bold; }
-  .mainFixture h3 {
+      justify-content: center;
+      width: 60%; }
+      .mainFixture figure div p {
+        width: 80%;
+        color: white;
+        font-size: small;
+        text-align: justify; }
+    .mainFixture figure nav {
+      width: 40%;
+      display: flex;
+      align-items: center; }
+      .mainFixture figure nav iframe {
+        width: 90%;
+        height: 100%; }
+  .mainFixture h4 {
     color: white;
     font-size: x-large;
     text-align: center;
     font-weight: bold;
-    padding: 1rem; }
+    margin-bottom: 1rem; }
 
 /* Diseño Tablets - Fixture */
-@media (max-width: 768px) {
-  .mainFixture article {
-    flex-direction: column; }
-    .mainFixture article .tablas .tablaInterior tr th {
-      font-size: x-small; }
-    .mainFixture article .tablas .tablaInterior tr td {
-      font-size: x-small; } }
-
 /* Diseño Celulares - Fixture */
 @media (max-width: 420px) {
-  .header {
-    flex-direction: column; } }
+  .mainFixture article {
+    flex-direction: column; }
+    .mainFixture article section {
+      width: 80%; }
+      .mainFixture article section img:hover {
+        transform: scale(1.05); }
+  .mainFixture figure {
+    flex-direction: column;
+    align-items: center; }
+    .mainFixture figure div {
+      width: 90%; }
+    .mainFixture figure nav {
+      width: 90%; }
+      .mainFixture figure nav iframe {
+        margin: auto; } }
 
 /* Estilo Página 3 - Historia */
 /* Estructura Grid */
@@ -288,7 +277,7 @@
       color: white;
       font-size: xx-large;
       text-align: center;
-      text-decoration: underline;
+      font-weight: bold;
       margin-top: .5rem; }
     .mainHistoria .historiaIntro h2 {
       color: white;
