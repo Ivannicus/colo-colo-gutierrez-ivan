@@ -28,6 +28,13 @@ En este proyecto fue utilizado:
 * sitemap.xml: Contiene el sitemap del sitio, construído con https://www.xml-sitemaps.com/
 * Wireframe_5_paginas.pdf: Contiene el wireframe realizado para cada una de las 5 páginas web del sitio, para los tamaños desktop y mobile
 
+## Hosting
+
+La página web fue cargada al hosting gratuito provisto por 000webhost, debido a que el servidor no es muy estable, está cargado en 2 diferentes links, los que dejo a continuación, sumado al de GitHub Pages:
+* https://colocoloivan.000webhostapp.com/index.html
+* https://colo-colo.000webhostapp.com/index.html
+* https://ivannicus.github.io/colo-colo-gutierrez-ivan/index.html
+
 ## Agradecimientos
 
 En este apartado me gustaría reconocer el trabajo de Johanna Palo, quien fue la docente de este curso. Gracias a sus claras explicaciones fui capaz de desarrollar este sitio web sin tener ningún conocimiento previo. Mención también para mi tutor Howard Parra, quien siempre estuvo disponible para responder dudas. Por último a la plataforma CoderHouse, ya que no tenía mucha fe a los cursos en línea y quedé sorprendido gratamente.
