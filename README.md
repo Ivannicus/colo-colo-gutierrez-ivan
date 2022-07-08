@@ -30,9 +30,8 @@ En este proyecto fue utilizado:
 
 ## Hosting
 
-La página web fue cargada al hosting gratuito provisto por 000webhost, debido a que el servidor no es muy estable, está cargado en 2 diferentes links, los que dejo a continuación, sumado al de GitHub Pages:
+La página web fue cargada al hosting gratuito provisto por 000webhost, debido a que el servidor no es muy estable, sumo también el link de GitHub Pages:
 * https://colocoloivan.000webhostapp.com/index.html
-* https://colo-colo.000webhostapp.com/index.html
 * https://ivannicus.github.io/colo-colo-gutierrez-ivan/index.html
 
 ## Agradecimientos
