@@ -19,13 +19,13 @@ En este proyecto fue utilizado:
 * img: Carpeta con las imagenes contenidas en el sitioweb, incluído el favicon
 * paginas: Carpeta que contiene las otras 4 páginas que conforman el sitio web
 * scss: Carpeta que contiene el código SCSS, está dividida en 2 carpetas + el archivo main.scss:
-** páginas: contiene el SCSS de cada una de las páginas del sitio web
-** secciones: contiene el código SCSS que se utiliza transversalmente en distintas páginas (header, footer, animaciones y funciones)
-** main scss: archivo principal que importa todos los otros archivos SCSS
+    * páginas: contiene el SCSS de cada una de las páginas del sitio web
+    * secciones: contiene el código SCSS que se utiliza transversalmente en distintas páginas (header, footer, animaciones y funciones)
+    * main scss: archivo principal que importa todos los otros archivos SCSS
 * .gitignore: Archivo utilizado para no versionar la carpeta de node_modules ni los packages.json utilizados
 * Presupuesto.xlsx: Archivo que contiene el presupuesto de la construcción de la página web en dólares
 * SEO.txt: Archivo que describe la incorporación de distintos elementos para contribuir al SEO (títulos, encabezados, keywords, descripción)
-* sitemap.xml: Contiene el sitemap del sitio 
+* sitemap.xml: Contiene el sitemap del sitio, construído con https://www.xml-sitemaps.com/
 * Wireframe_5_paginas.pdf: Contiene el wireframe realizado para cada una de las 5 páginas web del sitio, para los tamaños desktop y mobile
 
 ## Agradecimientos
